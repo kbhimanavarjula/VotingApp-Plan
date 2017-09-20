@@ -5,10 +5,34 @@ pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('GPU')
 pkg_source="https://github.com/kbhimanavarjula/VotingApp"
 pkg_build_deps=(core/git core/virtualenv)
-pkg_deps=(core/coreutils core/python2)
-#pkg_exports=([http]=8080)
-pkg_expose=(8080)
+pkg_deps=(core/coreutils core/python2 python2/pip)
+pkg_exports=([port]=port)
+pkg_exposes=(port)
 pkg_svc_user="root"
+pkg_binds=(
+[db]
+
+
+image: postgres:9.4
+    container_name: db
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+    networks:
+      - back-tier
+
+volumes:
+  db-data:
+
+networks:
+  front-tier:
+  back-tier:
+
+adapter = "postgresql"
+name = "Votingapp_production"
+user = "Votingapp"
+password = "myrailsapp"
+)
+
 
 do_download()  
 {
@@ -45,6 +69,8 @@ do_unpack() {
 
 do_build() {
 	build_line "do_build() ===================================================="
+	#local source_dir="${HAB_CACHE_SRC_PATH}/${pkg_dirname}/${pkg_filename}"
+	#pip install -r "${source_dir}/vote/requirements.txt"
 	return 0
 }
 
@@ -58,9 +84,6 @@ do_install() {
         pip install -r "${source_dir}/vote/requirements.txt"
 
 }
-
-
-
 
 
 

@@ -1,0 +1,3 @@
+cd /hab/cache/src/VotingApp-0.1.0/VotingApp/vote/
+#cd /hab/cache/src/VotingApp-0.1.0/venv/lib/python2.7/site-packages/flask/
+python app.py
