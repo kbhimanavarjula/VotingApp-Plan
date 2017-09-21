@@ -1,3 +1,8 @@
-cd /hab/cache/src/VotingApp-0.1.0/VotingApp/vote/
-#cd /hab/cache/src/VotingApp-0.1.0/venv/lib/python2.7/site-packages/flask/
-python app.py
+exec 2>&1
+
+echo "Starting flask "
+export FLASK_APP=/root/VotingApp-Vote-Plan/vote/app.py
+#flask run
+
+python vote/app.py
+
