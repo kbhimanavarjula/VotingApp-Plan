@@ -56,20 +56,15 @@ do_install() {
 	build_line "do_install() ===================================================="
 	local source_dir="${HAB_CACHE_SRC_PATH}/${pkg_dirname}/${pkg_filename}"
         build_line "source dir is ${source_dir}"
-	
-
 	vote_dirname="vote"
-	
 	if [ -d "${vote_dirname}" ];
         then
             rm -rf ${vote_dirname}
         fi
-
 	mkdir ${vote_dirname}
-
-	cp -vr ${source_dir}/vote/* ${vote_dirname}
-
-	#cd $pkg_prefix
+	mkdir /src/vote
+	cp -vr ${source_dir}/vote/* ${vote_dirname}/
+	cp -vr ${source_dir}/vote/* /src/vote/
 	virtualenv venv
     	source venv/bin/activate
 	
