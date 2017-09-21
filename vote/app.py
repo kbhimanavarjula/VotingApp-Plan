@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, make_response, g
+from flask import flask, render_template, request, make_response
+#import render_template, request, make_response
 from redis import Redis
 import os
 import socket
@@ -8,6 +9,8 @@ import json
 option_a = os.getenv('OPTION_A', "Cats")
 option_b = os.getenv('OPTION_B', "Dogs")
 hostname = socket.gethostname()
+
+#export FLASK_APP=/root/VotingApp-Vote-Plan/vote/app.py
 
 app = Flask(__name__)
 

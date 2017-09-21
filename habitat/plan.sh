@@ -5,33 +5,11 @@ pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('GPU')
 pkg_source="https://github.com/kbhimanavarjula/VotingApp"
 pkg_build_deps=(core/git core/virtualenv)
-pkg_deps=(core/coreutils core/python2 core/redis)
+pkg_deps=(core/coreutils core/python2)
 pkg_exports=([port]=port)
 pkg_exposes=(port)
 pkg_svc_user="root"
-pkg_binds=(
-[db]
-
-
-image: postgres:9.4
-    container_name: db
-    volumes:
-      - "db-data:/var/lib/postgresql/data"
-    networks:
-      - back-tier
-
-volumes:
-  db-data:
-
-networks:
-  front-tier:
-  back-tier:
-
-adapter = "postgresql"
-name = "Votingapp_production"
-user = "Votingapp"
-password = "myrailsapp"
-)
+#pkg_binds=()
 
 
 do_download()  
@@ -94,44 +72,8 @@ do_install() {
 	#cd $pkg_prefix
 	virtualenv venv
     	source venv/bin/activate
+	
         pip install -r "${vote_dirname}/requirements.txt"
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-# pkg_filename="${pkg_name}-${pkg_version}.tar.gz"
-# pkg_shasum="TODO"
-# pkg_deps=(core/glibc)
-# pkg_build_deps=(core/make core/gcc)
-# pkg_lib_dirs=(lib)
-# pkg_include_dirs=(include)
-# pkg_bin_dirs=(bin)
-# pkg_pconfig_dirs=(lib/pconfig)
-# pkg_svc_run="bin/haproxy -f $pkg_svc_config_path/haproxy.conf"
-# pkg_exports=(
-#   [host]=srv.address
-#   [port]=srv.port
-#   [ssl-port]=srv.ssl.port
-# )
-# pkg_exposes=(port ssl-port)
-# pkg_binds=(
-#   [database]="port host"
-# )
-# pkg_binds_optional=(
-#   [storage]="port host"
-# )
-# pkg_interpreters=(bin/bash)
-# pkg_svc_user="hab"
-# pkg_svc_group="$pkg_svc_user"
-# pkg_description="Some description."
-# pkg_upstream_url="http://example.com/project-name"

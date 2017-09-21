@@ -1,8 +1,11 @@
-exec 2>&1
+
+
+
 
 echo "Starting flask "
-export FLASK_APP=/root/VotingApp-Vote-Plan/vote/app.py
-#flask run
+export FLASK_APP="/root/VotingApp-Vote-Plan/vote/app.py"
 
-python vote/app.py
+
+python /src/vote/app.py
+
 
