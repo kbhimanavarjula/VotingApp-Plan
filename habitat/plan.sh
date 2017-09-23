@@ -5,7 +5,7 @@ pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('GPU')
 pkg_source="https://github.com/kbhimanavarjula/VotingApp"
 pkg_build_deps=(core/git)
-pkg_deps=(core/coreutils core/python2)
+pkg_deps=(core/coreutils core/python2 core/redis)
 pkg_exports=([port]=port)
 pkg_exposes=(port)
 pkg_svc_user="root"

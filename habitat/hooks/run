@@ -2,6 +2,4 @@ echo "Starting flask "
 export FLASK_APP="/root/VotingApp-Vote-Plan/vote/app.py"
 
 echo "starting app"
-python /src/vote/app.py
-
-
+echo "127.0.0.1 redis" >> /etc/hosts & python /src/vote/app.py & redis-server
