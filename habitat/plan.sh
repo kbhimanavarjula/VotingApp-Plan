@@ -4,8 +4,8 @@ pkg_version="0.1.0"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('GPU')
 pkg_source="https://github.com/kbhimanavarjula/VotingApp"
-pkg_build_deps=(core/git core/virtualenv)
-pkg_deps=(core/coreutils core/python2)
+pkg_build_deps=(core/git)
+pkg_deps=(core/coreutils core/python2 core/redis)
 pkg_exports=([port]=port)
 pkg_exposes=(port)
 pkg_svc_user="root"
@@ -61,12 +61,13 @@ do_install() {
         then
             rm -rf ${vote_dirname}
         fi
+	rm -rf /src/vote
 	mkdir ${vote_dirname}
 	mkdir /src/vote
 	cp -vr ${source_dir}/vote/* ${vote_dirname}/
 	cp -vr ${source_dir}/vote/* /src/vote/
-	virtualenv venv
-    	source venv/bin/activate
+#	virtualenv venv
+#    	source venv/bin/activate
 	
         pip install -r "${vote_dirname}/requirements.txt"
 
