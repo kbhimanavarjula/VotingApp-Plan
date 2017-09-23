@@ -1,176 +1,0 @@
-Script started on Fri Sep 22 13:56:18 2017
-   [1;36m: [1;37mLoading /src/habitat/plan.sh[0m
-   [1;36mVotingApp: [1;37mPlan loaded[0m
-   [1;36mVotingApp: [1;37mValidating plan metadata[0m
-   [1;36mVotingApp: [1;37mhab-plan-build setup[0m
-   [1;36mVotingApp: [1;37mWriting pre_build file[0m
-   [1;36mVotingApp: [1;37mUsing HAB_BIN=/hab/pkgs/core/hab/0.32.0/20170918224903/bin/hab for installs, signing, and hashing[0m
-   [1;36mVotingApp: [1;37mResolving build dependencies[0m
-» Installing core/git from channel 'stable'
-☛ Verifying core/git/2.10.0/20170711154627
-→ Using core/acl/2.2.52/20170513213108
-→ Using core/attr/2.4.47/20170513213059
-→ Using core/bzip2/1.0.6/20170513212938
-→ Using core/cacerts/2017.01.18/20170513215104
-→ Using core/coreutils/8.25/20170513213226
-☛ Verifying core/curl/7.51.0/20170513235716
-☛ Verifying core/db/5.3.28/20170513213734
-☛ Verifying core/expat/2.1.0/20170513213726
-→ Using core/gcc-libs/5.2.0/20170513212920
-☛ Verifying core/gdbm/1.11/20170513213716
-☛ Verifying core/gettext/0.19.6/20170513214354
-→ Using core/glibc/2.22/20170513201042
-→ Using core/gmp/6.1.0/20170513202112
-→ Using core/less/481/20170513213936
-→ Using core/libcap/2.24/20170513213120
-→ Using core/linux-headers/4.3/20170513200956
-→ Using core/ncurses/6.0/20170513213009
-☛ Verifying core/openssh/7.5p1/20170711154302
-→ Using core/openssl/1.0.2j/20170513215106
-→ Using core/pcre/8.38/20170513213423
-☛ Verifying core/perl/5.22.1/20170513213942
-→ Using core/xz/5.2.2/20170513214327
-→ Using core/zlib/1.2.8/20170513201911
-✓ Installed core/curl/7.51.0/20170513235716
-✓ Installed core/db/5.3.28/20170513213734
-✓ Installed core/expat/2.1.0/20170513213726
-✓ Installed core/gdbm/1.11/20170513213716
-✓ Installed core/gettext/0.19.6/20170513214354
-✓ Installed core/openssh/7.5p1/20170711154302
-✓ Installed core/perl/5.22.1/20170513213942
-✓ Installed core/git/2.10.0/20170711154627
-★ Install of core/git/2.10.0/20170711154627 complete with 8 new packages installed.
-   [1;36mVotingApp: [1;37mResolved build dependency 'core/git' to /hab/pkgs/core/git/2.10.0/20170711154627[0m
-   [1;36mVotingApp: [1;37mResolving run dependencies[0m
-» Installing core/coreutils from channel 'stable'
-→ Using core/coreutils/8.25/20170513213226
-★ Install of core/coreutils/8.25/20170513213226 complete with 0 new packages installed.
-   [1;36mVotingApp: [1;37mResolved dependency 'core/coreutils' to /hab/pkgs/core/coreutils/8.25/20170513213226[0m
-» Installing core/python2 from channel 'stable'
-☛ Verifying core/python2/2.7.13/20170514010436
-→ Using core/bzip2/1.0.6/20170513212938
-→ Using core/cacerts/2017.01.18/20170513215104
-→ Using core/gcc-libs/5.2.0/20170513212920
-→ Using core/gdbm/1.11/20170513213716
-→ Using core/glibc/2.22/20170513201042
-→ Using core/linux-headers/4.3/20170513200956
-→ Using core/ncurses/6.0/20170513213009
-→ Using core/openssl/1.0.2j/20170513215106
-→ Using core/readline/6.3.8/20170513213506
-☛ Verifying core/sqlite/3130000/20170514005747
-→ Using core/zlib/1.2.8/20170513201911
-✓ Installed core/sqlite/3130000/20170514005747
-✓ Installed core/python2/2.7.13/20170514010436
-★ Install of core/python2/2.7.13/20170514010436 complete with 2 new packages installed.
-   [1;36mVotingApp: [1;37mResolved dependency 'core/python2' to /hab/pkgs/core/python2/2.7.13/20170514010436[0m
-» Installing core/redis from channel 'stable'
-☛ Verifying core/redis/3.2.4/20170514150022
-→ Using core/glibc/2.22/20170513201042
-→ Using core/linux-headers/4.3/20170513200956
-✓ Installed core/redis/3.2.4/20170514150022
-★ Install of core/redis/3.2.4/20170514150022 complete with 1 new packages installed.
-   [1;36mVotingApp: [1;37mResolved dependency 'core/redis' to /hab/pkgs/core/redis/3.2.4/20170514150022[0m
-   [1;36mVotingApp: [1;37mSetting PATH=/hab/pkgs/core/coreutils/8.25/20170513213226/bin:/hab/pkgs/core/python2/2.7.13/20170514010436/bin:/hab/pkgs/core/redis/3.2.4/20170514150022/bin:/hab/pkgs/core/git/2.10.0/20170711154627/bin:/hab/pkgs/core/acl/2.2.52/20170513213108/bin:/hab/pkgs/core/attr/2.4.47/20170513213059/bin:/hab/pkgs/core/glibc/2.22/20170513201042/bin:/hab/pkgs/core/libcap/2.24/20170513213120/bin:/hab/pkgs/core/bzip2/1.0.6/20170513212938/bin:/hab/pkgs/core/gdbm/1.11/20170513213716/bin:/hab/pkgs/core/ncurses/6.0/20170513213009/bin:/hab/pkgs/core/openssl/1.0.2j/20170513215106/bin:/hab/pkgs/core/sqlite/3130000/20170514005747/bin:/hab/pkgs/core/curl/7.51.0/20170513235716/bin:/hab/pkgs/core/db/5.3.28/20170513213734/bin:/hab/pkgs/core/expat/2.1.0/20170513213726/bin:/hab/pkgs/core/gettext/0.19.6/20170513214354/bin:/hab/pkgs/core/less/481/20170513213936/bin:/hab/pkgs/core/openssh/7.5p1/20170711154302/bin:/hab/pkgs/core/openssh/7.5p1/20170711154302/sbin:/hab/pkgs/core/openssh/7.5p1/20170711154302/libexec:/hab/pkgs/core/pcre/8.38/20170513213423/bin:/hab/pkgs/core/perl/5.22.1/20170513213942/bin:/hab/pkgs/core/xz/5.2.2/20170513214327/bin:/hab/pkgs/core/hab-plan-build/0.32.0/20170918225734/bin:/hab/pkgs/core/bash/4.3.42/20170513213519/bin:/hab/pkgs/core/binutils/2.25.1/20170513201927/bin:/hab/pkgs/core/bzip2/1.0.6/20170513212938/bin:/hab/pkgs/core/coreutils/8.25/20170513213226/bin:/hab/pkgs/core/file/5.24/20170513201915/bin:/hab/pkgs/core/findutils/4.4.2/20170513214305/bin:/hab/pkgs/core/gawk/4.1.3/20170513213646/bin:/hab/pkgs/core/grep/2.22/20170513213444/bin:/hab/pkgs/core/gzip/1.6/20170513214605/bin:/hab/pkgs/core/hab/0.32.0/20170918224903/bin:/hab/pkgs/core/rq/0.9.2/20170612005822/bin:/hab/pkgs/core/sed/4.2.2/20170513213123/bin:/hab/pkgs/core/tar/1.29/20170513213607/bin:/hab/pkgs/core/unzip/6.0/20170513215357/bin:/hab/pkgs/core/wget/1.18/20170513215322/bin:/hab/pkgs/core/xz/5.2.2/20170513214327/bin:/hab/pkgs/core/acl/2.2.52/20170513213108/bin:/hab/pkgs/core/attr/2.4.47/20170513213059/bin:::/hab/pkgs/core/glibc/2.22/20170513201042/bin::/hab/pkgs/core/less/481/20170513213936/bin:/hab/pkgs/core/libcap/2.24/20170513213120/bin:/hab/pkgs/core/libidn/1.32/20170513215043/bin:::/hab/pkgs/core/ncurses/6.0/20170513213009/bin:/hab/pkgs/core/openssl/1.0.2j/20170513215106/bin:/hab/pkgs/core/pcre/8.38/20170513213423/bin::[0m
-mkdir: created directory '/hab/cache/src'
-   [1;36mVotingApp: [1;37mdo_download() ==================================================[0m
-   [1;36mVotingApp: [1;37m$pkg_dirname=VotingApp-0.1.0[0m
-   [1;36mVotingApp: [1;37m$pkg_filename=VotingApp[0m
-Cloning into 'VotingApp'...
-remote: Counting objects: 57, done.[K
-remote: Compressing objects:   2% (1/41)   [Kremote: Compressing objects:   4% (2/41)   [Kremote: Compressing objects:   7% (3/41)   [Kremote: Compressing objects:   9% (4/41)   [Kremote: Compressing objects:  12% (5/41)   [Kremote: Compressing objects:  14% (6/41)   [Kremote: Compressing objects:  17% (7/41)   [Kremote: Compressing objects:  19% (8/41)   [Kremote: Compressing objects:  21% (9/41)   [Kremote: Compressing objects:  24% (10/41)   [Kremote: Compressing objects:  26% (11/41)   [Kremote: Compressing objects:  29% (12/41)   [Kremote: Compressing objects:  31% (13/41)   [Kremote: Compressing objects:  34% (14/41)   [Kremote: Compressing objects:  36% (15/41)   [Kremote: Compressing objects:  39% (16/41)   [Kremote: Compressing objects:  41% (17/41)   [Kremote: Compressing objects:  43% (18/41)   [Kremote: Compressing objects:  46% (19/41)   [Kremote: Compressing objects:  48% (20/41)   [Kremote: Compressing objects:  51% (21/41)   [Kremote: Compressing objects:  53% (22/41)   [Kremote: Compressing objects:  56% (23/41)   [Kremote: Compressing objects:  58% (24/41)   [Kremote: Compressing objects:  60% (25/41)   [Kremote: Compressing objects:  63% (26/41)   [Kremote: Compressing objects:  65% (27/41)   [Kremote: Compressing objects:  68% (28/41)   [Kremote: Compressing objects:  70% (29/41)   [Kremote: Compressing objects:  73% (30/41)   [Kremote: Compressing objects:  75% (31/41)   [Kremote: Compressing objects:  78% (32/41)   [Kremote: Compressing objects:  80% (33/41)   [Kremote: Compressing objects:  82% (34/41)   [Kremote: Compressing objects:  85% (35/41)   [Kremote: Compressing objects:  87% (36/41)   [Kremote: Compressing objects:  90% (37/41)   [Kremote: Compressing objects:  92% (38/41)   [Kremote: Compressing objects:  95% (39/41)   [Kremote: Compressing objects:  97% (40/41)   [Kremote: Compressing objects: 100% (41/41)   [Kremote: Compressing objects: 100% (41/41), done.[K
-Unpacking objects:   1% (1/57)   Unpacking objects:   3% (2/57)   Unpacking objects:   5% (3/57)   Unpacking objects:   7% (4/57)   Unpacking objects:   8% (5/57)   Unpacking objects:  10% (6/57)   Unpacking objects:  12% (7/57)   Unpacking objects:  14% (8/57)   Unpacking objects:  15% (9/57)   Unpacking objects:  17% (10/57)   Unpacking objects:  19% (11/57)   Unpacking objects:  21% (12/57)   Unpacking objects:  22% (13/57)   Unpacking objects:  24% (14/57)   Unpacking objects:  26% (15/57)   Unpacking objects:  28% (16/57)   Unpacking objects:  29% (17/57)   Unpacking objects:  31% (18/57)   Unpacking objects:  33% (19/57)   Unpacking objects:  35% (20/57)   Unpacking objects:  36% (21/57)   Unpacking objects:  38% (22/57)   Unpacking objects:  40% (23/57)   Unpacking objects:  42% (24/57)   remote: Total 57 (delta 10), reused 54 (delta 7), pack-reused 0[K
-Unpacking objects:  43% (25/57)   Unpacking objects:  45% (26/57)   Unpacking objects:  47% (27/57)   Unpacking objects:  49% (28/57)   Unpacking objects:  50% (29/57)   Unpacking objects:  52% (30/57)   Unpacking objects:  54% (31/57)   Unpacking objects:  56% (32/57)   Unpacking objects:  57% (33/57)   Unpacking objects:  59% (34/57)   Unpacking objects:  61% (35/57)   Unpacking objects:  63% (36/57)   Unpacking objects:  64% (37/57)   Unpacking objects:  66% (38/57)   Unpacking objects:  68% (39/57)   Unpacking objects:  70% (40/57)   Unpacking objects:  71% (41/57)   Unpacking objects:  73% (42/57)   Unpacking objects:  75% (43/57)   Unpacking objects:  77% (44/57)   Unpacking objects:  78% (45/57)   Unpacking objects:  80% (46/57)   Unpacking objects:  82% (47/57)   Unpacking objects:  84% (48/57)   Unpacking objects:  85% (49/57)   Unpacking objects:  87% (50/57)   Unpacking objects:  89% (51/57)   Unpacking objects:  91% (52/57)   Unpacking objects:  92% (53/57)   Unpacking objects:  94% (54/57)   Unpacking objects:  96% (55/57)   Unpacking objects:  98% (56/57)   Unpacking objects: 100% (57/57)   Unpacking objects: 100% (57/57), done.
-   [1;36mVotingApp: [1;37mdo_clean() ====================================================[0m
-   [1;36mVotingApp: [1;37mdo_unpack() ====================================================[0m
-   [1;36mVotingApp: [1;37mSetting build environment[0m
-   [1;36mVotingApp: [1;37mSetting PREFIX=/hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922135618[0m
-   [1;36mVotingApp: [1;37mSetting LD_RUN_PATH=/hab/pkgs/core/python2/2.7.13/20170514010436/lib[0m
-   [1;36mVotingApp: [1;37mSetting CFLAGS=-I/hab/pkgs/core/python2/2.7.13/20170514010436/include -I/hab/pkgs/core/python2/2.7.13/20170514010436/Include[0m
-   [1;36mVotingApp: [1;37mSetting CXXFLAGS=-I/hab/pkgs/core/python2/2.7.13/20170514010436/include -I/hab/pkgs/core/python2/2.7.13/20170514010436/Include[0m
-   [1;36mVotingApp: [1;37mSetting CPPFLAGS=-I/hab/pkgs/core/python2/2.7.13/20170514010436/include -I/hab/pkgs/core/python2/2.7.13/20170514010436/Include[0m
-   [1;36mVotingApp: [1;37mSetting LDFLAGS=-L/hab/pkgs/core/python2/2.7.13/20170514010436/lib -L/hab/pkgs/core/git/2.10.0/20170711154627/lib[0m
-   [1;36mVotingApp: [1;37mSetting PKG_CONFIG_PATH=/hab/pkgs/core/python2/2.7.13/20170514010436/lib/pkgconfig[0m
-   [1;36mVotingApp: [1;37mPreparing to build[0m
-   [1;36mVotingApp: [1;37mBuilding[0m
-   [1;36mVotingApp: [1;37mdo_build() ====================================================[0m
-   [1;36mVotingApp: [1;37mInstalling[0m
-mkdir: created directory '/hab/pkgs/kbhimanavarjula'
-mkdir: created directory '/hab/pkgs/kbhimanavarjula/VotingApp'
-mkdir: created directory '/hab/pkgs/kbhimanavarjula/VotingApp/0.1.0'
-mkdir: created directory '/hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922135618'
-   [1;36mVotingApp: [1;37mdo_install() ====================================================[0m
-   [1;36mVotingApp: [1;37msource dir is /hab/cache/src/VotingApp-0.1.0/VotingApp[0m
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/app.py' -> 'vote/app.py'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/requirements.txt' -> 'vote/requirements.txt'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/static' -> 'vote/static'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/static/stylesheets' -> 'vote/static/stylesheets'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/static/stylesheets/style.css' -> 'vote/static/stylesheets/style.css'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/templates' -> 'vote/templates'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/templates/index.html' -> 'vote/templates/index.html'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/app.py' -> '/src/vote/app.py'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/requirements.txt' -> '/src/vote/requirements.txt'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/static' -> '/src/vote/static'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/static/stylesheets' -> '/src/vote/static/stylesheets'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/static/stylesheets/style.css' -> '/src/vote/static/stylesheets/style.css'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/templates' -> '/src/vote/templates'
-'/hab/cache/src/VotingApp-0.1.0/VotingApp/vote/templates/index.html' -> '/src/vote/templates/index.html'
-Collecting Flask (from -r vote/requirements.txt (line 1))
-  Downloading Flask-0.12.2-py2.py3-none-any.whl (83kB)
-[?25l[K    12% |###                             | 10kB 10.5MB/s eta 0:00:01[K    24% |#######                         | 20kB 7.9MB/s eta 0:00:01[K    37% |###########                     | 30kB 6.9MB/s eta 0:00:01[K    49% |###############                 | 40kB 6.6MB/s eta 0:00:01[K    61% |###################             | 51kB 6.4MB/s eta 0:00:01[K    74% |#######################         | 61kB 7.6MB/s eta 0:00:01[K    86% |###########################     | 71kB 7.1MB/s eta 0:00:01[K    98% |############################### | 81kB 7.9MB/s eta 0:00:01[K    100% |################################| 92kB 4.2MB/s 
-[?25hCollecting Redis (from -r vote/requirements.txt (line 2))
-  Downloading redis-2.10.6-py2.py3-none-any.whl (64kB)
-[?25l[K    15% |#####                           | 10kB 67.3MB/s eta 0:00:01[K    31% |##########                      | 20kB 48.8MB/s eta 0:00:01[K    47% |###############                 | 30kB 53.3MB/s eta 0:00:01[K    63% |####################            | 40kB 22.6MB/s eta 0:00:01[K    78% |#########################       | 51kB 15.6MB/s eta 0:00:01[K    94% |##############################  | 61kB 17.1MB/s eta 0:00:01[K    100% |################################| 71kB 5.6MB/s 
-[?25hCollecting gunicorn (from -r vote/requirements.txt (line 3))
-  Downloading gunicorn-19.7.1-py2.py3-none-any.whl (111kB)
-[?25l[K    9% |##                              | 10kB 80.6MB/s eta 0:00:01[K    18% |#####                           | 20kB 53.8MB/s eta 0:00:01[K    27% |########                        | 30kB 56.1MB/s eta 0:00:01[K    36% |###########                     | 40kB 18.8MB/s eta 0:00:01[K    45% |##############                  | 51kB 19.9MB/s eta 0:00:01[K    54% |#################               | 61kB 22.5MB/s eta 0:00:01[K    64% |####################            | 71kB 19.3MB/s eta 0:00:01[K    73% |#######################         | 81kB 19.4MB/s eta 0:00:01[K    82% |##########################      | 92kB 21.0MB/s eta 0:00:01[K    91% |#############################   | 102kB 20.4MB/s eta 0:00:01[K    100% |################################| 112kB 4.8MB/s 
-[?25hCollecting itsdangerous>=0.21 (from Flask->-r vote/requirements.txt (line 1))
-  Downloading itsdangerous-0.24.tar.gz (46kB)
-[?25l[K    22% |#######                         | 10kB 82.0MB/s eta 0:00:01[K    44% |##############                  | 20kB 18.6MB/s eta 0:00:01[K    66% |#####################           | 30kB 24.4MB/s eta 0:00:01[K    88% |############################    | 40kB 14.8MB/s eta 0:00:01[K    100% |################################| 51kB 5.4MB/s 
-[?25hCollecting Jinja2>=2.4 (from Flask->-r vote/requirements.txt (line 1))
-  Downloading Jinja2-2.9.6-py2.py3-none-any.whl (340kB)
-[?25l[K    3% |                                | 10kB 54.8MB/s eta 0:00:01[K    6% |#                               | 20kB 48.9MB/s eta 0:00:01[K    9% |##                              | 30kB 50.0MB/s eta 0:00:01[K    12% |###                             | 40kB 48.9MB/s eta 0:00:01[K    15% |####                            | 51kB 25.4MB/s eta 0:00:01[K    18% |#####                           | 61kB 28.1MB/s eta 0:00:01[K    21% |######                          | 71kB 29.5MB/s eta 0:00:01[K    24% |#######                         | 81kB 22.7MB/s eta 0:00:01[K    27% |########                        | 92kB 24.2MB/s eta 0:00:01[K    30% |#########                       | 102kB 24.5MB/s eta 0:00:01[K    33% |##########                      | 112kB 24.4MB/s eta 0:00:01[K    36% |###########                     | 122kB 21.2MB/s eta 0:00:01[K    39% |############                    | 133kB 19.9MB/s eta 0:00:01[K    42% |#############                   | 143kB 20.1MB/s eta 0:00:01[K    45% |##############                  | 153kB 21.8MB/s eta 0:00:01[K    48% |###############                 | 163kB 20.1MB/s eta 0:00:01[K    51% |################                | 174kB 20.4MB/s eta 0:00:01[K    54% |#################               | 184kB 23.9MB/s eta 0:00:01[K    57% |##################              | 194kB 23.9MB/s eta 0:00:01[K    60% |###################             | 204kB 24.6MB/s eta 0:00:01[K    63% |####################            | 215kB 24.7MB/s eta 0:00:01[K    66% |#####################           | 225kB 24.9MB/s eta 0:00:01[K    69% |######################          | 235kB 25.6MB/s eta 0:00:01[K    72% |#######################         | 245kB 25.5MB/s eta 0:00:01[K    75% |########################        | 256kB 29.7MB/s eta 0:00:01[K    78% |#########################       | 266kB 33.6MB/s eta 0:00:01[K    81% |#########################       | 276kB 27.2MB/s eta 0:00:01[K    84% |##########################      | 286kB 28.8MB/s eta 0:00:01[K    87% |###########################     | 296kB 29.1MB/s eta 0:00:01[K    90% |############################    | 307kB 27.0MB/s eta 0:00:01[K    93% |#############################   | 317kB 22.5MB/s eta 0:00:01[K    96% |##############################  | 327kB 26.1MB/s eta 0:00:01[K    99% |############################### | 337kB 27.5MB/s eta 0:00:01[K    100% |################################| 348kB 3.0MB/s 
-[?25hCollecting Werkzeug>=0.7 (from Flask->-r vote/requirements.txt (line 1))
-  Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)
-[?25l[K    3% |#                               | 10kB 59.5MB/s eta 0:00:01[K    6% |##                              | 20kB 31.5MB/s eta 0:00:01[K    9% |###                             | 30kB 36.6MB/s eta 0:00:01[K    13% |####                            | 40kB 24.9MB/s eta 0:00:01[K    16% |#####                           | 51kB 25.6MB/s eta 0:00:01[K    19% |######                          | 61kB 28.3MB/s eta 0:00:01[K    22% |#######                         | 71kB 25.4MB/s eta 0:00:01[K    26% |########                        | 81kB 23.4MB/s eta 0:00:01[K    29% |#########                       | 92kB 25.2MB/s eta 0:00:01[K    32% |##########                      | 102kB 21.8MB/s eta 0:00:01[K    35% |###########                     | 112kB 21.8MB/s eta 0:00:01[K    39% |############                    | 122kB 21.5MB/s eta 0:00:01[K    42% |#############                   | 133kB 20.7MB/s eta 0:00:01[K    45% |##############                  | 143kB 23.5MB/s eta 0:00:01[K    49% |###############                 | 153kB 22.5MB/s eta 0:00:01[K    52% |################                | 163kB 21.4MB/s eta 0:00:01[K    55% |#################               | 174kB 23.9MB/s eta 0:00:01[K    58% |##################              | 184kB 23.5MB/s eta 0:00:01[K    62% |###################             | 194kB 23.5MB/s eta 0:00:01[K    65% |####################            | 204kB 29.3MB/s eta 0:00:01[K    68% |#####################           | 215kB 28.8MB/s eta 0:00:01[K    71% |#######################         | 225kB 32.2MB/s eta 0:00:01[K    75% |########################        | 235kB 29.0MB/s eta 0:00:01[K    78% |#########################       | 245kB 26.7MB/s eta 0:00:01[K    81% |##########################      | 256kB 29.6MB/s eta 0:00:01[K    85% |###########################     | 266kB 31.2MB/s eta 0:00:01[K    88% |############################    | 276kB 31.3MB/s eta 0:00:01[K    91% |#############################   | 286kB 38.0MB/s eta 0:00:01[K    94% |##############################  | 296kB 37.2MB/s eta 0:00:01[K    98% |############################### | 307kB 37.4MB/s eta 0:00:01[K    100% |################################| 317kB 2.1MB/s 
-[?25hCollecting click>=2.0 (from Flask->-r vote/requirements.txt (line 1))
-  Downloading click-6.7-py2.py3-none-any.whl (71kB)
-[?25l[K    14% |####                            | 10kB 78.2MB/s eta 0:00:01[K    28% |#########                       | 20kB 60.2MB/s eta 0:00:01[K    43% |#############                   | 30kB 57.0MB/s eta 0:00:01[K    57% |##################              | 40kB 40.3MB/s eta 0:00:01[K    71% |#######################         | 51kB 42.2MB/s eta 0:00:01[K    86% |###########################     | 61kB 43.7MB/s eta 0:00:01[K    100% |################################| 71kB 6.3MB/s 
-[?25hCollecting MarkupSafe>=0.23 (from Jinja2>=2.4->Flask->-r vote/requirements.txt (line 1))
-  Downloading MarkupSafe-1.0.tar.gz
-Installing collected packages: itsdangerous, MarkupSafe, Jinja2, Werkzeug, click, Flask, Redis, gunicorn
-  Running setup.py install for itsdangerous ... [?25l- done
-[?25h  Running setup.py install for MarkupSafe ... [?25l- \ done
-[?25hSuccessfully installed Flask-0.12.2 Jinja2-2.9.6 MarkupSafe-1.0 Redis-2.10.6 Werkzeug-0.12.2 click-6.7 gunicorn-19.7.1 itsdangerous-0.24
-   [1;36mVotingApp: [1;37mWriting configuration[0m
-   [1;36mVotingApp: [1;37mWriting service management scripts[0m
-   [1;36mVotingApp: [1;37mUsing run hook /src/habitat/hooks/run[0m
-   [1;36mVotingApp: [1;37mStripping unneeded symbols from binaries and libraries[0m
-   [1;36mVotingApp: [1;37mCreating manifest[0m
-   [1;36mVotingApp: [1;37mBuilding package metadata[0m
-   [1;36mVotingApp: [1;37mGenerating blake2b hashes of all files in the package[0m
-   [1;36mVotingApp: [1;37mGenerating signed metadata FILES[0m
-» Signing VotingApp_blake2bsums
-☛ Signing VotingApp_blake2bsums with kbhimanavarjula-20170922094636 to create /hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922135618/FILES
-★ Signed artifact /hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922135618/FILES.
-   [1;36mVotingApp: [1;37mGenerating package artifact[0m
-/hab/pkgs/core/tar/1.29/20170513213607/bin/tar: Removing leading `/' from member names
-/hab/cache/artifacts/.kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.tar (1/1)
-  100 %           4880 B / 40.0 KiB = 0.119                                    
-» Signing /hab/cache/artifacts/.kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.tar.xz
-☛ Signing /hab/cache/artifacts/.kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.tar.xz with kbhimanavarjula-20170922094636 to create /hab/cache/artifacts/kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.hart
-★ Signed artifact /hab/cache/artifacts/kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.hart.
-'/hab/cache/artifacts/kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.hart' -> '/src/results/kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.hart'
-   [1;36mVotingApp: [1;37mhab-plan-build cleanup[0m
-   [1;36mVotingApp: [1;37m[0m
-   [1;36mVotingApp: [1;37mSource Path: /hab/cache/src/VotingApp-0.1.0[0m
-   [1;36mVotingApp: [1;37mInstalled Path: /hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922135618[0m
-   [1;36mVotingApp: [1;37mArtifact: /src/results/kbhimanavarjula-VotingApp-0.1.0-20170922135618-x86_64-linux.hart[0m
-   [1;36mVotingApp: [1;37mBuild Report: /src/results/last_build.env[0m
-   [1;36mVotingApp: [1;37mSHA256 Checksum: 5dec5f46b0304ba859f033909f5fbacd4381e8f427a6e9a0416a2b26c0dffa9c[0m
-   [1;36mVotingApp: [1;37mBlake2b Checksum: 944bade438c0bb608ef6f8fd5aa26b908c6cbc48d28216841bb4f4ea1aceb08f[0m
-   [1;36mVotingApp: [1;37m[0m
-   [1;36mVotingApp: [1;37mI love it when a plan.sh comes together.[0m
-   [1;36mVotingApp: [1;37m[0m
-   [1;36mVotingApp: [1;37mBuild time: 0m42s[0m
-
-Script done on Fri Sep 22 13:57:00 2017

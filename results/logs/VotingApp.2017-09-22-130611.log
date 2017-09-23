@@ -1,100 +1,0 @@
-Script started on Fri Sep 22 13:06:11 2017
-   [1;36m: [1;37mLoading /src/habitat/plan.sh[0m
-   [1;36mVotingApp: [1;37mPlan loaded[0m
-   [1;36mVotingApp: [1;37mValidating plan metadata[0m
-   [1;36mVotingApp: [1;37mhab-plan-build setup[0m
-   [1;36mVotingApp: [1;37mWriting pre_build file[0m
-   [1;36mVotingApp: [1;37mUsing HAB_BIN=/hab/pkgs/core/hab/0.32.0/20170918224903/bin/hab for installs, signing, and hashing[0m
-   [1;36mVotingApp: [1;37mResolving build dependencies[0m
-» Installing core/git from channel 'stable'
-☛ Verifying core/git/2.10.0/20170711154627
-→ Using core/acl/2.2.52/20170513213108
-→ Using core/attr/2.4.47/20170513213059
-→ Using core/bzip2/1.0.6/20170513212938
-→ Using core/cacerts/2017.01.18/20170513215104
-→ Using core/coreutils/8.25/20170513213226
-☛ Verifying core/curl/7.51.0/20170513235716
-☛ Verifying core/db/5.3.28/20170513213734
-☛ Verifying core/expat/2.1.0/20170513213726
-→ Using core/gcc-libs/5.2.0/20170513212920
-☛ Verifying core/gdbm/1.11/20170513213716
-☛ Verifying core/gettext/0.19.6/20170513214354
-→ Using core/glibc/2.22/20170513201042
-→ Using core/gmp/6.1.0/20170513202112
-→ Using core/less/481/20170513213936
-→ Using core/libcap/2.24/20170513213120
-→ Using core/linux-headers/4.3/20170513200956
-→ Using core/ncurses/6.0/20170513213009
-☛ Verifying core/openssh/7.5p1/20170711154302
-→ Using core/openssl/1.0.2j/20170513215106
-→ Using core/pcre/8.38/20170513213423
-☛ Verifying core/perl/5.22.1/20170513213942
-→ Using core/xz/5.2.2/20170513214327
-→ Using core/zlib/1.2.8/20170513201911
-✓ Installed core/curl/7.51.0/20170513235716
-✓ Installed core/db/5.3.28/20170513213734
-✓ Installed core/expat/2.1.0/20170513213726
-✓ Installed core/gdbm/1.11/20170513213716
-✓ Installed core/gettext/0.19.6/20170513214354
-✓ Installed core/openssh/7.5p1/20170711154302
-✓ Installed core/perl/5.22.1/20170513213942
-✓ Installed core/git/2.10.0/20170711154627
-★ Install of core/git/2.10.0/20170711154627 complete with 8 new packages installed.
-   [1;36mVotingApp: [1;37mResolved build dependency 'core/git' to /hab/pkgs/core/git/2.10.0/20170711154627[0m
-   [1;36mVotingApp: [1;37mResolving run dependencies[0m
-» Installing core/coreutils from channel 'stable'
-→ Using core/coreutils/8.25/20170513213226
-★ Install of core/coreutils/8.25/20170513213226 complete with 0 new packages installed.
-   [1;36mVotingApp: [1;37mResolved dependency 'core/coreutils' to /hab/pkgs/core/coreutils/8.25/20170513213226[0m
-» Installing core/python2 from channel 'stable'
-☛ Verifying core/python2/2.7.13/20170514010436
-→ Using core/bzip2/1.0.6/20170513212938
-→ Using core/cacerts/2017.01.18/20170513215104
-→ Using core/gcc-libs/5.2.0/20170513212920
-→ Using core/gdbm/1.11/20170513213716
-→ Using core/glibc/2.22/20170513201042
-→ Using core/linux-headers/4.3/20170513200956
-→ Using core/ncurses/6.0/20170513213009
-→ Using core/openssl/1.0.2j/20170513215106
-→ Using core/readline/6.3.8/20170513213506
-☛ Verifying core/sqlite/3130000/20170514005747
-→ Using core/zlib/1.2.8/20170513201911
-✓ Installed core/sqlite/3130000/20170514005747
-✓ Installed core/python2/2.7.13/20170514010436
-★ Install of core/python2/2.7.13/20170514010436 complete with 2 new packages installed.
-   [1;36mVotingApp: [1;37mResolved dependency 'core/python2' to /hab/pkgs/core/python2/2.7.13/20170514010436[0m
-   [1;36mVotingApp: [1;37mSetting PATH=/hab/pkgs/core/coreutils/8.25/20170513213226/bin:/hab/pkgs/core/python2/2.7.13/20170514010436/bin:/hab/pkgs/core/git/2.10.0/20170711154627/bin:/hab/pkgs/core/acl/2.2.52/20170513213108/bin:/hab/pkgs/core/attr/2.4.47/20170513213059/bin:/hab/pkgs/core/glibc/2.22/20170513201042/bin:/hab/pkgs/core/libcap/2.24/20170513213120/bin:/hab/pkgs/core/bzip2/1.0.6/20170513212938/bin:/hab/pkgs/core/gdbm/1.11/20170513213716/bin:/hab/pkgs/core/ncurses/6.0/20170513213009/bin:/hab/pkgs/core/openssl/1.0.2j/20170513215106/bin:/hab/pkgs/core/sqlite/3130000/20170514005747/bin:/hab/pkgs/core/curl/7.51.0/20170513235716/bin:/hab/pkgs/core/db/5.3.28/20170513213734/bin:/hab/pkgs/core/expat/2.1.0/20170513213726/bin:/hab/pkgs/core/gettext/0.19.6/20170513214354/bin:/hab/pkgs/core/less/481/20170513213936/bin:/hab/pkgs/core/openssh/7.5p1/20170711154302/bin:/hab/pkgs/core/openssh/7.5p1/20170711154302/sbin:/hab/pkgs/core/openssh/7.5p1/20170711154302/libexec:/hab/pkgs/core/pcre/8.38/20170513213423/bin:/hab/pkgs/core/perl/5.22.1/20170513213942/bin:/hab/pkgs/core/xz/5.2.2/20170513214327/bin:/hab/pkgs/core/hab-plan-build/0.32.0/20170918225734/bin:/hab/pkgs/core/bash/4.3.42/20170513213519/bin:/hab/pkgs/core/binutils/2.25.1/20170513201927/bin:/hab/pkgs/core/bzip2/1.0.6/20170513212938/bin:/hab/pkgs/core/coreutils/8.25/20170513213226/bin:/hab/pkgs/core/file/5.24/20170513201915/bin:/hab/pkgs/core/findutils/4.4.2/20170513214305/bin:/hab/pkgs/core/gawk/4.1.3/20170513213646/bin:/hab/pkgs/core/grep/2.22/20170513213444/bin:/hab/pkgs/core/gzip/1.6/20170513214605/bin:/hab/pkgs/core/hab/0.32.0/20170918224903/bin:/hab/pkgs/core/rq/0.9.2/20170612005822/bin:/hab/pkgs/core/sed/4.2.2/20170513213123/bin:/hab/pkgs/core/tar/1.29/20170513213607/bin:/hab/pkgs/core/unzip/6.0/20170513215357/bin:/hab/pkgs/core/wget/1.18/20170513215322/bin:/hab/pkgs/core/xz/5.2.2/20170513214327/bin:/hab/pkgs/core/acl/2.2.52/20170513213108/bin:/hab/pkgs/core/attr/2.4.47/20170513213059/bin:::/hab/pkgs/core/glibc/2.22/20170513201042/bin::/hab/pkgs/core/less/481/20170513213936/bin:/hab/pkgs/core/libcap/2.24/20170513213120/bin:/hab/pkgs/core/libidn/1.32/20170513215043/bin:::/hab/pkgs/core/ncurses/6.0/20170513213009/bin:/hab/pkgs/core/openssl/1.0.2j/20170513215106/bin:/hab/pkgs/core/pcre/8.38/20170513213423/bin::[0m
-mkdir: created directory '/hab/cache/src'
-   [1;36mVotingApp: [1;37mdo_download() ==================================================[0m
-   [1;36mVotingApp: [1;37m$pkg_dirname=VotingApp-0.1.0[0m
-   [1;36mVotingApp: [1;37m$pkg_filename=VotingApp[0m
-Cloning into 'VotingApp'...
-remote: Counting objects: 57, done.[K
-remote: Compressing objects:   2% (1/41)   [Kremote: Compressing objects:   4% (2/41)   [Kremote: Compressing objects:   7% (3/41)   [Kremote: Compressing objects:   9% (4/41)   [Kremote: Compressing objects:  12% (5/41)   [Kremote: Compressing objects:  14% (6/41)   [Kremote: Compressing objects:  17% (7/41)   [Kremote: Compressing objects:  19% (8/41)   [Kremote: Compressing objects:  21% (9/41)   [Kremote: Compressing objects:  24% (10/41)   [Kremote: Compressing objects:  26% (11/41)   [Kremote: Compressing objects:  29% (12/41)   [Kremote: Compressing objects:  31% (13/41)   [Kremote: Compressing objects:  34% (14/41)   [Kremote: Compressing objects:  36% (15/41)   [Kremote: Compressing objects:  39% (16/41)   [Kremote: Compressing objects:  41% (17/41)   [Kremote: Compressing objects:  43% (18/41)   [Kremote: Compressing objects:  46% (19/41)   [Kremote: Compressing objects:  48% (20/41)   [Kremote: Compressing objects:  51% (21/41)   [Kremote: Compressing objects:  53% (22/41)   [Kremote: Compressing objects:  56% (23/41)   [Kremote: Compressing objects:  58% (24/41)   [Kremote: Compressing objects:  60% (25/41)   [Kremote: Compressing objects:  63% (26/41)   [Kremote: Compressing objects:  65% (27/41)   [Kremote: Compressing objects:  68% (28/41)   [Kremote: Compressing objects:  70% (29/41)   [Kremote: Compressing objects:  73% (30/41)   [Kremote: Compressing objects:  75% (31/41)   [Kremote: Compressing objects:  78% (32/41)   [Kremote: Compressing objects:  80% (33/41)   [Kremote: Compressing objects:  82% (34/41)   [Kremote: Compressing objects:  85% (35/41)   [Kremote: Compressing objects:  87% (36/41)   [Kremote: Compressing objects:  90% (37/41)   [Kremote: Compressing objects:  92% (38/41)   [Kremote: Compressing objects:  95% (39/41)   [Kremote: Compressing objects:  97% (40/41)   [Kremote: Compressing objects: 100% (41/41)   [Kremote: Compressing objects: 100% (41/41), done.[K
-Unpacking objects:   1% (1/57)   Unpacking objects:   3% (2/57)   Unpacking objects:   5% (3/57)   Unpacking objects:   7% (4/57)   Unpacking objects:   8% (5/57)   Unpacking objects:  10% (6/57)   Unpacking objects:  12% (7/57)   Unpacking objects:  14% (8/57)   Unpacking objects:  15% (9/57)   Unpacking objects:  17% (10/57)   Unpacking objects:  19% (11/57)   Unpacking objects:  21% (12/57)   Unpacking objects:  22% (13/57)   Unpacking objects:  24% (14/57)   Unpacking objects:  26% (15/57)   Unpacking objects:  28% (16/57)   Unpacking objects:  29% (17/57)   Unpacking objects:  31% (18/57)   Unpacking objects:  33% (19/57)   Unpacking objects:  35% (20/57)   Unpacking objects:  36% (21/57)   Unpacking objects:  38% (22/57)   Unpacking objects:  40% (23/57)   Unpacking objects:  42% (24/57)   remote: Total 57 (delta 10), reused 54 (delta 7), pack-reused 0[K
-Unpacking objects:  43% (25/57)   Unpacking objects:  45% (26/57)   Unpacking objects:  47% (27/57)   Unpacking objects:  49% (28/57)   Unpacking objects:  50% (29/57)   Unpacking objects:  52% (30/57)   Unpacking objects:  54% (31/57)   Unpacking objects:  56% (32/57)   Unpacking objects:  57% (33/57)   Unpacking objects:  59% (34/57)   Unpacking objects:  61% (35/57)   Unpacking objects:  63% (36/57)   Unpacking objects:  64% (37/57)   Unpacking objects:  66% (38/57)   Unpacking objects:  68% (39/57)   Unpacking objects:  70% (40/57)   Unpacking objects:  71% (41/57)   Unpacking objects:  73% (42/57)   Unpacking objects:  75% (43/57)   Unpacking objects:  77% (44/57)   Unpacking objects:  78% (45/57)   Unpacking objects:  80% (46/57)   Unpacking objects:  82% (47/57)   Unpacking objects:  84% (48/57)   Unpacking objects:  85% (49/57)   Unpacking objects:  87% (50/57)   Unpacking objects:  89% (51/57)   Unpacking objects:  91% (52/57)   Unpacking objects:  92% (53/57)   Unpacking objects:  94% (54/57)   Unpacking objects:  96% (55/57)   Unpacking objects:  98% (56/57)   Unpacking objects: 100% (57/57)   Unpacking objects: 100% (57/57), done.
-   [1;36mVotingApp: [1;37mdo_clean() ====================================================[0m
-   [1;36mVotingApp: [1;37mdo_unpack() ====================================================[0m
-   [1;36mVotingApp: [1;37mSetting build environment[0m
-   [1;36mVotingApp: [1;37mSetting PREFIX=/hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922130611[0m
-   [1;36mVotingApp: [1;37mSetting LD_RUN_PATH=/hab/pkgs/core/python2/2.7.13/20170514010436/lib[0m
-   [1;36mVotingApp: [1;37mSetting CFLAGS=-I/hab/pkgs/core/python2/2.7.13/20170514010436/include -I/hab/pkgs/core/python2/2.7.13/20170514010436/Include[0m
-   [1;36mVotingApp: [1;37mSetting CXXFLAGS=-I/hab/pkgs/core/python2/2.7.13/20170514010436/include -I/hab/pkgs/core/python2/2.7.13/20170514010436/Include[0m
-   [1;36mVotingApp: [1;37mSetting CPPFLAGS=-I/hab/pkgs/core/python2/2.7.13/20170514010436/include -I/hab/pkgs/core/python2/2.7.13/20170514010436/Include[0m
-   [1;36mVotingApp: [1;37mSetting LDFLAGS=-L/hab/pkgs/core/python2/2.7.13/20170514010436/lib -L/hab/pkgs/core/git/2.10.0/20170711154627/lib[0m
-   [1;36mVotingApp: [1;37mSetting PKG_CONFIG_PATH=/hab/pkgs/core/python2/2.7.13/20170514010436/lib/pkgconfig[0m
-   [1;36mVotingApp: [1;37mPreparing to build[0m
-   [1;36mVotingApp: [1;37mBuilding[0m
-   [1;36mVotingApp: [1;37mdo_build() ====================================================[0m
-   [1;36mVotingApp: [1;37mInstalling[0m
-mkdir: created directory '/hab/pkgs/kbhimanavarjula'
-mkdir: created directory '/hab/pkgs/kbhimanavarjula/VotingApp'
-mkdir: created directory '/hab/pkgs/kbhimanavarjula/VotingApp/0.1.0'
-mkdir: created directory '/hab/pkgs/kbhimanavarjula/VotingApp/0.1.0/20170922130611'
-   [1;36mVotingApp: [1;37mdo_install() ====================================================[0m
-   [1;36mVotingApp: [1;37msource dir is /hab/cache/src/VotingApp-0.1.0/VotingApp[0m
-mkdir: cannot create directory '/src/vote': File exists
-   [1;36mVotingApp: [1;37mBuild time: 0m33s[0m
-   [1;36mVotingApp: [1;31mExiting on error[0m
-
-Script done on Fri Sep 22 13:06:44 2017
