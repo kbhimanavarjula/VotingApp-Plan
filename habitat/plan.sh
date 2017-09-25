@@ -66,9 +66,6 @@ do_install() {
 	mkdir /src/vote
 	cp -vr ${source_dir}/vote/* ${vote_dirname}/
 	cp -vr ${source_dir}/vote/* /src/vote/
-#	virtualenv venv
-#    	source venv/bin/activate
-	
         pip install -r "${vote_dirname}/requirements.txt"
 
 }
